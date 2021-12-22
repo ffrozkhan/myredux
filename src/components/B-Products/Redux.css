@@ -1,0 +1,141 @@
+/* #41b853 green
+#43bee5 light blue
+#efa500 orange
+#161b40 dark blue
+#f40058 pink */
+
+.NavBar {
+  background-color: #161b40;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  width: 200px;
+  text-decoration: none;
+  color: #43bee5;
+  font-size: 25px;
+  margin-right: 100px;
+}
+.cart-anchor {
+  text-decoration: none;
+  margin-left: 50px;
+  color: #43bee5;
+}
+.search {
+  width: 500px;
+  /* margin-top: 10px; */
+  float: left;
+  clear: right;
+  border-right: none;
+  height: 30px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-color: #efa500;
+  border-right: none;
+  background: transparent;
+  color: white;
+}
+
+.search:focus {
+  outline: none;
+}
+.srch-btn {
+  width: 150px;
+  float: left;
+  border-left: none;
+  border: 2px solid #efa500;
+  height: 30px;
+  font-size: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #efa500;
+  transition: 0.4s ease-in;
+}
+.srch-btn:hover {
+  color: #161b40;
+  background-color: #43bee5;
+  border-color: #43bee5;
+}
+.srch-btn:focus {
+  outline: none;
+}
+.cards-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cards {
+  background-color: antiquewhite;
+  width: 300px;
+  margin: 15px;
+  box-shadow: #efa500 2px 2px 5px, #efa500 -2px -2px 5px;
+  transition: 0.5s;
+}
+.cards:hover {
+  box-shadow: none;
+}
+.image {
+  margin-top: 25px;
+  transition: 0.4s;
+  opacity: 0.9;
+}
+.image:hover {
+  box-shadow: #161b40 2px 2px 5px, #161b40 -2px -2px 5px;
+  opacity: 1;
+}
+.add-cart {
+  width: 100px;
+  height: 30px;
+  background-color: #41b853;
+  color: black;
+  margin: 0px 10px 20px 0px;
+  border: none;
+  transition: 0.3s ease-in;
+  font-size: 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.add-cart:hover {
+  box-shadow: black 2px 2px 5px;
+  background-color: #efa500;
+}
+.caros {
+  height: 200px;
+}
+.view-details {
+  width: 100px;
+  height: 30px;
+  background-color: yellowgreen;
+  color: black;
+  margin: 0px 10px 20px 0px;
+  border-style: none;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.view-details:hover {
+  box-shadow: black 2px 2px 5px;
+  background-color: cadetblue;
+}
+.remove-cart {
+  width: 100px;
+  height: 30px;
+  background-color: darkred;
+  color: black;
+  margin: 0px 10px 20px 0px;
+  border-style: none;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.remove-cart:hover {
+  box-shadow: black 2px 2px 5px;
+  background-color: cadetblue;
+  color: black;
+}

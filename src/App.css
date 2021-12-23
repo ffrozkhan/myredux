@@ -1,6 +1,13 @@
 .App {
   text-align: center;
-  background-color: cornsilk;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    325deg,
+    #ff3cac 0%,
+    #784ba0 28%,
+    #2b86c5 53%,
+    #082561 82%
+  );
   position: relative;
 }
 

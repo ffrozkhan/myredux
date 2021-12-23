@@ -10,22 +10,24 @@ const ProductDetails = () => {
   return (
     <div>
       <h1>Product Details</h1>
-      <div className="cards">
-        <img
-          className="image"
-          height="250px"
-          width="250px"
-          src={selectedItem.image}
-          alt=""
-        />
-        <h3>{selectedItem.title.substr(0, 20) + ".."}</h3>
-        <h4>Price: ${selectedItem.price}</h4>
-        <button
-          className="add-cart"
-          onClick={() => dispatch({ type: "Add-Cart", data: selectedItem })}
-        >
-          Add To Cart
-        </button>
+      <div className="details-parent">
+        <div className="product-image-div">
+          <img className="product-image" src={selectedItem.image} alt="" />
+        </div>
+        <div className="product-content">
+          <h3>{selectedItem.title}</h3>
+          <h4>Price: ${selectedItem.price}</h4>
+          <span>
+            <b>Category: {selectedItem.category}</b>
+          </span>
+          <p style={{ width: "400px" }}>{selectedItem.description}</p>
+          <button
+            className="add-cart"
+            onClick={() => dispatch({ type: "Add-Cart", data: selectedItem })}
+          >
+            Add To Cart
+          </button>
+        </div>
       </div>
     </div>
   );

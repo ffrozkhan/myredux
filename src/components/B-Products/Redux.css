@@ -40,7 +40,12 @@
   background: transparent;
   color: white;
 }
-
+.search:hover {
+  box-shadow: #43bee5 0px 2px 3px;
+}
+.search:hover .srch-btn {
+  box-shadow: #43bee5 0px 2px 3px;
+}
 .search:focus {
   outline: none;
 }
@@ -60,6 +65,7 @@
   color: #161b40;
   background-color: #43bee5;
   border-color: #43bee5;
+  box-shadow: #efa500 0px 2px 2px;
 }
 .srch-btn:focus {
   outline: none;
@@ -71,10 +77,11 @@
   flex-wrap: wrap;
 }
 .cards {
+  border-radius: 10px;
   background-color: antiquewhite;
   width: 300px;
   margin: 15px;
-  box-shadow: #efa500 2px 2px 5px, #efa500 -2px -2px 5px;
+  box-shadow: whitesmoke 2px 2px 5px, whitesmoke -2px -2px 5px;
   transition: 0.5s;
 }
 .cards:hover {
@@ -84,6 +91,7 @@
   margin-top: 25px;
   transition: 0.4s;
   opacity: 0.9;
+  border-radius: 5px;
 }
 .image:hover {
   box-shadow: #161b40 2px 2px 5px, #161b40 -2px -2px 5px;
@@ -138,4 +146,21 @@
   box-shadow: black 2px 2px 5px;
   background-color: cadetblue;
   color: black;
+}
+.product-image-div {
+  float: left;
+}
+.product-image {
+  margin-top: 50px;
+  float: left;
+  height: 600px;
+  width: 600px;
+  margin-left: 50px;
+}
+.details-parent {
+  height: 800px;
+}
+.product-content {
+  float: left;
+  margin: 200px 0px 0px 150px;
 }
